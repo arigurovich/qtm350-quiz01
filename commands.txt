@@ -26,3 +26,16 @@ git commit -m "add .gitignore file" .gitignore
 git switch main
 git merge feature-update
 nano commands.txt
+
+Bonus 1:
+gh auth login
+git remote -v
+git remote add upstream https://github.com/danilofreire/qtm350-quiz01.git
+git remote -v
+gh repo set-default danilofreire/qtm350-quiz01
+git switch main
+git pull upstream main
+
+Bonus 2:
+git rebase -i HEAD~2
+git push --force
